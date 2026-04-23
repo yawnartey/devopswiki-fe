@@ -1,0 +1,264 @@
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.theme-dark {
+  background-color: #242424;
+  color: #fff;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-light {
+  background-color: #ffffff;
+  color: #213547;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-dark p {
+  color: #a0aec0;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.theme-light p {
+  color: #4a5568;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.hero-search-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto 0;
+}
+
+.hero-search-icon {
+  position: absolute;
+  left: 1rem;
+  font-size: 1.1rem;
+  color: #888;
+  pointer-events: none;
+}
+
+.hero-search-bar {
+  width: 100%;
+  padding: 0.9rem 1rem 0.9rem 2.8rem;
+  border-radius: 30px;        /* was: 30px 0 0 30px */
+  border: 2px solid #646cff;
+  outline: none;
+  font-size: 1rem;
+  background-color: inherit;
+  color: inherit;
+}
+
+.hero-search-btn:hover {
+  background-color: #535bf2;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.hero-tag {
+  padding: 0.3rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.theme-dark .hero-tag {
+  background-color: #1e1e1e;
+  color: #a0aec0;
+  border: 1px solid #2e2e2e;
+}
+
+.theme-dark .hero-tag:hover {
+  background-color: #646cff;
+  color: #fff;
+  border-color: #646cff;
+}
+
+.theme-light .hero-tag {
+  background-color: #f1f5f9;
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+}
+
+.theme-light .hero-tag:hover {
+  background-color: #646cff;
+  color: #fff;
+  border-color: #646cff;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; 
+  padding: 1rem 2rem;
+  margin-top: auto;
+  border-top: 1px solid #2e2e2e;
+  font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.theme-dark .footer {
+  background-color: #242424;
+  color: #a0aec0;
+  border-top-color: #2e2e2e;
+}
+
+.theme-light .footer {
+  background-color: #ffffff;
+  color: #4a5568;
+  border-top-color: #e5e7eb;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-link:hover {
+  color: #646cff;
+}
+
+.results-list {
+  margin: 2rem auto 5rem;
+  max-width: 650px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.result-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid transparent;
+}
+
+.theme-dark .result-item {
+  border-bottom-color: #2e2e2e;
+}
+
+.theme-light .result-item {
+  border-bottom-color: #e5e7eb;
+}
+
+.result-source {
+  font-size: 0.8rem;
+  color: #888;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.result-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none;
+}
+
+.result-title:hover {
+  text-decoration: underline;
+}
+
+.result-description {
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.theme-dark .result-description {
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+.theme-light .result-description {
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+.results-count {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.result-source-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.result-favicon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: #f1f5f9;
+}
+
+.result-favicon {
+  width: 25px;
+  height: 25px;
+}
