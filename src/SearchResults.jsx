@@ -13,7 +13,7 @@ function SearchResults({ isDark, onToggleTheme }) {
   useEffect(() => {
     if (!query.trim()) return;
     setLoading(true);
-    axios.get('http://localhost:8000/api/search', { params: { q: query } })
+    axios.get('http://devopswiki.info:8000/api/search', { params: { q: query } })
       .then(res => setResults(res.data))
       .catch(err => console.error('Search failed:', err))
       .finally(() => setLoading(false));
