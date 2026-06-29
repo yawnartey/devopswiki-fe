@@ -22,7 +22,7 @@ function Home({ isDark, onToggleTheme }) {
     <div className={isDark ? 'theme-dark' : 'theme-light'}>
       <Navbar isDark={isDark} onToggleTheme={onToggleTheme} />
 
-      <div style={{ maxWidth: '1280px', margin: '0 auto', textAlign: 'center', marginTop: '15%' }}>
+      <div style={{ maxWidth: '1280px', margin: '0 auto', textAlign: 'center', marginTop: '15%', padding: '0 1rem'}}>
         <h1>Stop searching. Start building.</h1>
         <p>DevOpsWiki curates the best resources across CI/CD, containers, cloud, and more.</p>
 
