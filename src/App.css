@@ -44,6 +44,7 @@
   background-color: #242424;
   color: #fff;
   min-height: 100vh;
+  overflow-x: hidden;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -51,6 +52,7 @@
   background-color: #ffffff;
   color: #213547;
   min-height: 100vh;
+  overflow-x: hidden;
   transition: background-color 0.3s, color 0.3s;
 }
 
