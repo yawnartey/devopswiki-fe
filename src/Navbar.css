@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
-  padding: 1rem 2rem;
+  padding: 1rem clamp(0.5rem, 2vw, 2rem);
+  gap: clamp(0.25rem, 1vw, 2rem);
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -35,22 +35,22 @@
   text-decoration: none;
 }
 
-.navbar-right .nav-link {
-  text-decoration: none;
-  margin-left: 1.5rem;
-  font-size: 0.95rem;
-}
-
 .navbar-right {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
+.navbar-right .nav-link {
+  text-decoration: none;
+  margin-left: clamp(0.3rem, 1.5vw, 1.5rem);
+  font-size: clamp(0.75rem, 2vw, 0.95rem);
+}
+
 .navbar-right .subscribe-btn {
   background-color: #646cff;
   color: #fff !important;
-  padding: 0.4rem 1rem;
+  padding: 0.4rem clamp(0.4rem, 1.5vw, 1rem);
   border-radius: 20px;
   transition: background-color 0.2s;
 }
@@ -60,14 +60,14 @@
 }
 
 .theme-toggle {
-  margin-left: 1.5rem;
-  padding: 0.4rem 0.8rem;
+  margin-left: clamp(0.3rem, 1.5vw, 1.5rem);
+  padding: 0.4rem clamp(0.3rem, 1vw, 0.8rem);
   border-radius: 20px;
   border: 1px solid currentColor;
   background: transparent;
   color: inherit;
   cursor: pointer;
-  font-size: 0.85rem;
+  font-size: clamp(0.75rem, 2vw, 0.85rem);
   transition: opacity 0.2s;
 }
 
